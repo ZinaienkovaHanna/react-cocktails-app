@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300&display=swap');
+
+:root {
+    /* ### Color */
+    --textColor: #272727;
+    --textMenuColor: #fff;
+    --backgroundColor: #cdcdcd;
+    --backgroundMenuColor: #48494a;
+    --backgroundButtonColor: #edc3ca;
+    --backgroundModalColor: #000;
+    --iconColor: #fff;
+    --iconColorHover: #edc3ca;
+
+    /* ### Spacing */
+    --spacingBase: 8px;
+    --spacingSmall: 4px;
+    --spacingLarge: 16px;
+    --spacingExtraLarge: 40px;
+
+    /* ### Font-size */
+    --fontSizeBase: 16px;
+    --fontSizeSmall: 12px;
+    --fontSizeLarge: 24px;
+    --fontSizeExtraLarge: 36px;
+
+    /* ### Font-weight */
+    --fontWeightRegular: 400;
+    --fontWeightSemiBold: 600;
+
+    /* ### Border-radius */
+    --borderRadius: 8px;
+
+    /* ### Width */
+    --containerWidth: 1200px;
+    --menuWidth: 600px;
+    --cardWidth: 200px;
+
+    /* ### Height */
+    --menuHeight: 60px;
+    --cardHeight: 160px;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--backgroundColor);
+}
