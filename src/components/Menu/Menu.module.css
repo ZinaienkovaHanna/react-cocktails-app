@@ -1,0 +1,34 @@
+.background {
+    background-color: var(--backgroundMenuColor);
+    height: var(--menuHeight);
+}
+
+.wrapper {
+    width: var(--containerWidth);
+    height: var(--menuHeight);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacingLarge);
+    list-style-type: none;
+}
+
+.nav_link {
+    color: var(--textMenuColor);
+    font-size: var(--fontSizeBase);
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: var(--linkColorHover);
+}
+
+.active {
+    color: var(--linkColorHover);
+    font-size: var(--fontSizeBase);
+    text-decoration: none;
+}
+
+.logo {
+    height: var(--menuHeight);
+}
