@@ -1,0 +1,40 @@
+import { FC } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Root from '../routes/Root';
+import ErrorPage from '../routes/ErrorPage';
+import Home from '../routes/Home';
+import Categories from '../routes/Categories';
+import Ingredients from '../routes/Ingredients';
+import MyList from '../routes/MyList';
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Root />,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                index: true,
+                element: <Home />,
+            },
+            {
+                path: '/categories',
+                element: <Categories />,
+            },
+            {
+                path: '/ingredients',
+                element: <Ingredients />,
+            },
+            {
+                path: '/mylist',
+                element: <MyList />,
+            },
+        ],
+    },
+]);
+
+const App: FC = () => {
+    return <RouterProvider router={router} />;
+};
+
+export default App;

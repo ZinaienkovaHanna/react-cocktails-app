@@ -5,11 +5,12 @@
     --textColor: #272727;
     --textMenuColor: #fff;
     --backgroundColor: #cdcdcd;
-    --backgroundMenuColor: #48494a;
+    --backgroundMenuColor: #272727;
     --backgroundButtonColor: #edc3ca;
-    --backgroundModalColor: #000;
+    --backgroundModalColor: #48494a;
     --iconColor: #fff;
     --iconColorHover: #edc3ca;
+    --linkColorHover: #edc3ca;
 
     /* ### Spacing */
     --spacingBase: 8px;
