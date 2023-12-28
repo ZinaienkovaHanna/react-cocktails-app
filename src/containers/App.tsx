@@ -6,6 +6,7 @@ import Home from '../routes/Home';
 import Categories from '../routes/Categories';
 import Ingredients from '../routes/Ingredients';
 import MyList from '../routes/MyList';
+import { homeLoader } from '../routes/loader';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+                loader: homeLoader,
             },
             {
                 path: '/categories',
