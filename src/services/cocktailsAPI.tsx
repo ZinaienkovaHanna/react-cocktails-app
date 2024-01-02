@@ -77,6 +77,15 @@ export const getCocktailbyId = async (id: string) => {
         const cocktail = await getData(`/lookup.php?i=${id}`);
         return cocktail.map(serializeCocktail);
     } catch (error) {
-        throw new Error('Error getting cocktail');
+        throw new Error('Error getting cocktail by id');
+    }
+};
+
+export const getCocktailbyName = async (name: string) => {
+    try {
+        const cocktail = await getData(`/search.php?s=${name}`);
+        return cocktail.map(serializeCocktail);
+    } catch (error) {
+        throw new Error('Error getting cocktail by name');
     }
 };

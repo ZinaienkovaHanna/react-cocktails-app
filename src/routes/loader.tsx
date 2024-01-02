@@ -8,7 +8,7 @@ export const homeLoader = async () => {
 
         for (const cocktail of data) {
             let popularCocktail = await getCocktailbyId(cocktail.id);
-            popularCocktails.push(popularCocktail);
+            popularCocktails.push(popularCocktail[0]);
         }
 
         return { popularCocktails };

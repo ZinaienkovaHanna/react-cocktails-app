@@ -1,0 +1,20 @@
+.container {
+    width: var(--cardWidth);
+    background-color: var(--backgroundCardColor);
+    border-radius: var(--borderRadius);
+}
+
+.name {
+    margin: 0;
+    padding-left: var(--spacingBase);
+    padding-top: var(--spacingBase);
+    color: var(--titleCardColor);
+    font-size: var(--fontSizeBase);
+}
+
+.ingredients {
+    margin: 0;
+    padding: var(--spacingBase);
+    color: var(--textCardColor);
+    font-size: var(--fontSizeSmall);
+}

@@ -1,4 +1,4 @@
-interface IngredientType {
+export interface IngredientType {
     name: string | null;
     measure: string | null;
 }

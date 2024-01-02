@@ -1,0 +1,11 @@
+.image {
+    width: var(--imageCardWidth);
+    border-radius: var(--borderRadius);
+    user-select: none;
+    filter: grayscale(70%);
+    cursor: pointer;
+}
+
+.image:hover {
+    filter: grayscale(0%);
+}
