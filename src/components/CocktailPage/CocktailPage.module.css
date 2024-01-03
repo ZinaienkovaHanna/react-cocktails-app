@@ -1,0 +1,22 @@
+.container {
+    width: var(--containerWidth);
+    margin: var(--spacingMedium) auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacingLarge);
+    color: var(--textColor);
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightLight);
+}
+
+.name {
+    color: var(--titleCardListColor);
+    font-size: var(--fontSizeLarge);
+    font-weight: var(--fontWeightSemiBold);
+}
+
+.title_instructions {
+    font-size: var(--fontSizeMedium);
+    font-style: italic;
+    font-weight: var(--fontWeightRegular);
+}

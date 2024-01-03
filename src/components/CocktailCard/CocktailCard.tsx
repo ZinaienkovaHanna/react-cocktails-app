@@ -9,18 +9,12 @@ interface CocktailCardProps {
     imgSrc: string;
     name: string;
     ingredients: IngredientType[];
-    id: string;
 }
 
-const CocktailCard: FC<CocktailCardProps> = ({
-    imgSrc,
-    name,
-    ingredients,
-    id,
-}) => {
+const CocktailCard: FC<CocktailCardProps> = ({ imgSrc, name, ingredients }) => {
     return (
         <div className={styles.container}>
-            <Image imgSrc={imgSrc} alt={name} className="card" id={id} />
+            <Image imgSrc={imgSrc} alt={name} className="card" />
             <h4 className={styles.name}>{name}</h4>
             <p className={styles.ingredients}>
                 {getIngredientInfo(ingredients)}

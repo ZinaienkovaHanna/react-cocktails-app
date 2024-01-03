@@ -14,6 +14,7 @@
     --backgroundInputColor: #182026;
     --backgroundMenuColor: #000;
     --backgroundButtonColor: #545b60;
+    --backgroundIconColor: #13191e;
 
     --buttonColor: #13191e;
     --borderInputColor: #edc3ca;
@@ -35,6 +36,7 @@
     /* ### Font-size */
     --fontSizeBase: 16px;
     --fontSizeSmall: 12px;
+    --fontSizeMedium: 24px;
     --fontSizeLarge: 40px;
     --fontSizeExtraLarge: 80px;
 
@@ -51,12 +53,13 @@
     --menuWidth: 600px;
     --cardWidth: 188px;
     --imageCardWidth: 188px;
+    --imagePageWidth: 400px;
     --inputWidth: 400px;
     --buttonWidth: 100px;
 
     /* ### Height */
     --menuHeight: 60px;
-    --cardHeight: 160px;
+    --cardHeight: 300px;
     --logoHeight: 48px;
     --inputHeight: 32px;
     --buttonHeight: 32px;

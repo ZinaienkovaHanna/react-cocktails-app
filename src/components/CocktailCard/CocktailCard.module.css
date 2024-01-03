@@ -1,5 +1,6 @@
 .container {
     width: var(--cardWidth);
+    height: var(--cardHeight);
     background-color: var(--backgroundCardColor);
     border-radius: var(--borderRadius);
 }

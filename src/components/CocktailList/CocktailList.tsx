@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import CocktailCard from '../CocktailCard';
 import { CocktailType } from '../../types/cocktailsTypes';
 
@@ -12,13 +13,17 @@ const CocktailList: FC<CocktailListProps> = ({ cocktails }) => {
     return (
         <div className={styles.container}>
             {cocktails.map((cocktail) => (
-                <CocktailCard
+                <Link
+                    to={`/cocktails/${cocktail.id}`}
                     key={cocktail.id}
-                    id={cocktail.id}
-                    imgSrc={cocktail.image}
-                    name={cocktail.name}
-                    ingredients={cocktail.ingredients}
-                />
+                    className={styles.link}
+                >
+                    <CocktailCard
+                        imgSrc={cocktail.image}
+                        name={cocktail.name}
+                        ingredients={cocktail.ingredients}
+                    />
+                </Link>
             ))}
         </div>
     );

@@ -6,7 +6,8 @@ import Home from '../routes/Home';
 import Categories from '../routes/Categories';
 import Ingredients from '../routes/Ingredients';
 import MyList from '../routes/MyList';
-import { homeLoader } from '../routes/loader';
+import Cocktail from '../routes/Cocktail';
+import { homeLoader, cocktailLoader } from '../routes/loader';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
             {
                 path: '/categories',
                 element: <Categories />,
+            },
+            {
+                path: '/cocktails/:cocktailId',
+                element: <Cocktail />,
+                loader: cocktailLoader,
             },
             {
                 path: '/ingredients',

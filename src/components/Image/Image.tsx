@@ -1,4 +1,6 @@
 import { FC, useState } from 'react';
+import Icon from '@mdi/react';
+import { mdiBookmarkOutline } from '@mdi/js';
 
 import styles from './Image.module.css';
 
@@ -6,10 +8,9 @@ interface ImageProps {
     imgSrc: string;
     alt: string;
     className: string;
-    id: string;
 }
 
-const Image: FC<ImageProps> = ({ imgSrc, alt, className, id }) => {
+const Image: FC<ImageProps> = ({ imgSrc, alt, className }) => {
     const [imageSrc, setImageSrc] = useState<string>(imgSrc);
 
     const handleError = () =>
@@ -20,10 +21,14 @@ const Image: FC<ImageProps> = ({ imgSrc, alt, className, id }) => {
             <img
                 src={imageSrc}
                 alt={alt}
-                className={`${styles.image} ${className}`}
+                className={
+                    className === 'page' ? styles.page_image : styles.card_image
+                }
                 onError={handleError}
             />
-            <div className={styles.overlay}></div>
+            <button className={styles.button}>
+                <Icon path={mdiBookmarkOutline} size={1} />
+            </button>
         </div>
     );
 };

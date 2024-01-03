@@ -1,4 +1,9 @@
-.image {
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.card_image {
     width: var(--imageCardWidth);
     border-radius: var(--borderRadius);
     user-select: none;
@@ -6,6 +11,31 @@
     cursor: pointer;
 }
 
-.image:hover {
+.card_image:hover {
     filter: grayscale(0%);
+}
+
+.page_image {
+    width: var(--imagePageWidth);
+    border-radius: var(--borderRadius);
+}
+
+.button {
+    position: absolute;
+    bottom: 75%;
+    right: 5%;
+    background-color: var(--backgroundIconColor);
+    color: var(--iconColor);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: var(--spacingExtraSmall) var(--spacingBase);
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    opacity: 1;
+    color: var(--iconHoverColor);
+    transform: scale(1.2);
 }
