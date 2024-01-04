@@ -1,7 +1,10 @@
 .container {
     width: var(--containerWidth);
     margin: auto;
-    padding-bottom: var(--spacingMedium);
+    margin-bottom: var(--spacingMedium);
+}
+
+.card_container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--spacingSmall);
@@ -9,4 +12,17 @@
 
 .link {
     text-decoration: none;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: var(--spacingMedium);
+    padding-top: var(--spacingMedium);
+    color: var(--titleCardListColor);
+    font-size: var(--fontSizeLarge);
+    font-style: italic;
+    font-weight: var(--fontWeightRegular);
 }

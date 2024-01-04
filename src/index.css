@@ -8,6 +8,7 @@
     --titleCardColor: #c5cfce;
     --titleCardListColor: #edc3ca;
     --subtitleCardListColor: #c5cfce;
+    --invalidColor: rgb(228, 101, 101);
 
     --backgroundColor: #13191e;
     --backgroundCardColor: #182026;
@@ -30,6 +31,7 @@
     --spacingExtraSmall: 4px;
     --spacingSmall: 12px;
     --spacingMedium: 40px;
+    --spacingExtraMedium: 100px;
     --spacingLarge: 140px;
     --spacingExtraLarge: 180px;
 
@@ -59,7 +61,8 @@
 
     /* ### Height */
     --menuHeight: 60px;
-    --cardHeight: 300px;
+    --cardHeight: 264px;
+    --cardTitleHeight: 64px;
     --logoHeight: 48px;
     --inputHeight: 32px;
     --buttonHeight: 32px;

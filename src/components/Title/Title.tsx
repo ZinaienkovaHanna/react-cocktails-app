@@ -19,7 +19,7 @@ const Title: FC = () => {
             </h3>
             <h6 className={styles.subtitle}>recipes you should know</h6>
             <button className={styles.scroll_button} onClick={scrollToSection}>
-                <Icon path={mdiChevronDown} size={3} className={styles.icon} />
+                <Icon path={mdiChevronDown} size={2} className={styles.icon} />
             </button>
         </div>
     );

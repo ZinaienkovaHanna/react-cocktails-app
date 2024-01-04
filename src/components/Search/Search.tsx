@@ -1,24 +1,23 @@
 import { FC, useState } from 'react';
-import { getCocktailbyName } from '../../services/cocktailsAPI';
+import { useNavigate } from 'react-router-dom';
 
 import styles from './Search.module.css';
 
-const Search: FC = () => {
-    const [searchValue, setSearchValue] = useState('');
+interface SearchType {
+    path: string;
+    placeholder: string;
+    autocompleteData: any;
+}
 
-    const handleSearch = async () => {
-        try {
-            const cocktail = await getCocktailbyName(searchValue);
-            console.log(cocktail);
-        } catch (error) {
-            console.error('Error fetching cocktail:', error);
-        }
-    };
+const Search: FC<SearchType> = ({ path, placeholder, autocompleteData }) => {
+    const [searchValue, setSearchValue] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (searchValue.trim() !== '') {
-            handleSearch();
+            navigate(`/${path}/search/${searchValue}`, { replace: true });
+            setSearchValue('');
         }
     };
 
@@ -26,18 +25,22 @@ const Search: FC = () => {
         <form className={styles.container} onSubmit={handleSubmit}>
             <input
                 type="text"
-                placeholder="Search by name..."
+                placeholder={placeholder}
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                className={styles.input}
+                className={`${styles.input} ${
+                    !searchValue.trim() && styles.invalid
+                }`}
+                list={path}
+                required
             />
-            <button
-                type="submit"
-                className={styles.button}
-                onClick={() => handleSearch()}
-            >
-                Search
-            </button>
+            <datalist id={path}>
+                {' '}
+                {autocompleteData.map((value: any) => (
+                    <option key={value.id} value={value.name} />
+                ))}
+            </datalist>
+            <button className={styles.button}>Search</button>
         </form>
     );
 };

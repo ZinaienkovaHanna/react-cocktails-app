@@ -48,10 +48,6 @@
         "id": "17247"
     },
     {
-        "name": "Boulevardier",
-        "id": "17251"
-    },
-    {
         "name": "Mai Tai",
         "id": "11690"
     },
@@ -59,10 +55,7 @@
         "name": "Gimlet",
         "id": "17255"
     },
-    {
-        "name": "Clover Club",
-        "id": "17186"
-    },
+
     {
         "name": "Gin Fizz",
         "id": "11410"
@@ -100,23 +93,7 @@
         "id": "17180"
     },
     {
-        "name": "Old Cuban",
-        "id": "178371"
-    },
-    {
         "name": "Paloma",
         "id": "17253"
-    },
-    {
-        "name": "Americano",
-        "id": "15941"
-    },
-    {
-        "name": "Vesper",
-        "id": "17218"
-    },
-    {
-        "name": "Caipirinha",
-        "id": "11202"
     }
 ]

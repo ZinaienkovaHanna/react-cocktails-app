@@ -29,14 +29,15 @@ const Menu: FC = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/categories"
+                            to="/cocktails"
                             className={({ isActive }) =>
                                 isActive ? styles.active : styles.nav_link
                             }
                         >
-                            Categories
+                            Cocktails
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink
                             to="/ingredients"
@@ -45,6 +46,16 @@ const Menu: FC = () => {
                             }
                         >
                             Ingredients
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/categories"
+                            className={({ isActive }) =>
+                                isActive ? styles.active : styles.nav_link
+                            }
+                        >
+                            Categories
                         </NavLink>
                     </li>
                     <li>

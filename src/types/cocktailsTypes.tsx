@@ -43,3 +43,15 @@ export interface CocktailAPIType {
     strIngredient10: string | null;
     strMeasure10: string | null;
 }
+
+export interface CocktailByIngredientType {
+    id: string;
+    name: string;
+    image: string;
+}
+
+export interface CocktailByIngredientAPIType {
+    idDrink: string;
+    strDrink: string;
+    strDrinkThumb: string;
+}

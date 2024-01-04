@@ -4,18 +4,18 @@
     background-color: var(--backgroundCardColor);
     border-radius: var(--borderRadius);
 }
+.title_container {
+    height: var(--cardTitleHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .name {
     margin: 0;
-    padding-left: var(--spacingBase);
-    padding-top: var(--spacingBase);
+    padding: 0 var(--spacingBase);
+    text-align: center;
     color: var(--titleCardColor);
     font-size: var(--fontSizeBase);
-}
-
-.ingredients {
-    margin: 0;
-    padding: var(--spacingBase);
-    color: var(--textCardColor);
-    font-size: var(--fontSizeSmall);
 }

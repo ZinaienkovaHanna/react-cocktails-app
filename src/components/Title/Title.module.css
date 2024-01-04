@@ -26,7 +26,7 @@
     padding: 0;
     text-align: center;
     padding-left: var(--spacingExtraLarge);
-    padding-bottom: var(--spacingLarge);
+    padding-bottom: var(--spacingExtraMedium);
     color: var(--subtitleCardListColor);
     font-size: var(--fontSizeLarge);
     font-style: italic;
@@ -35,7 +35,6 @@
 
 .icon {
     color: var(--iconColor);
-    padding-bottom: var(--spacingExtraLarge);
     transition: transform 0.3s ease;
 }
 

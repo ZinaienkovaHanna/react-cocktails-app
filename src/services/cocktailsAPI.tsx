@@ -1,4 +1,9 @@
-import { CocktailType, CocktailAPIType } from '../types/cocktailsTypes';
+import {
+    CocktailType,
+    CocktailAPIType,
+    CocktailByIngredientType,
+    CocktailByIngredientAPIType,
+} from '../types/cocktailsTypes';
 
 const BASE_URL = process.env.REACT_APP_BASE_URL || '';
 
@@ -56,6 +61,16 @@ const serializeCocktail = (cocktail: CocktailAPIType): CocktailType => {
     };
 };
 
+const serializeCocktailByIngredient = (
+    cocktailByIngredient: CocktailByIngredientAPIType
+): CocktailByIngredientType => {
+    return {
+        id: cocktailByIngredient.idDrink,
+        name: cocktailByIngredient.strDrink,
+        image: cocktailByIngredient.strDrinkThumb,
+    };
+};
+
 const getData = async (path: string) => {
     try {
         const response = await fetch(`${BASE_URL}${path}`);
@@ -72,7 +87,7 @@ const getData = async (path: string) => {
     }
 };
 
-export const getCocktailbyId = async (id: string) => {
+export const getCocktailById = async (id: string) => {
     try {
         const cocktail = await getData(`/lookup.php?i=${id}`);
         return cocktail.map(serializeCocktail);
@@ -81,11 +96,20 @@ export const getCocktailbyId = async (id: string) => {
     }
 };
 
-export const getCocktailbyName = async (name: string) => {
+export const getCocktailByName = async (name: string) => {
     try {
         const cocktail = await getData(`/search.php?s=${name}`);
         return cocktail.map(serializeCocktail);
     } catch (error) {
         throw new Error('Error getting cocktail by name');
+    }
+};
+
+export const getCocktailsByIngredient = async (ingredientName: string) => {
+    try {
+        const cocktails = await getData(`/filter.php?i=${ingredientName}`);
+        return cocktails.map(serializeCocktailByIngredient);
+    } catch (error) {
+        throw new Error('Error getting cocktails by ingredient');
     }
 };
