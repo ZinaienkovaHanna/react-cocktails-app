@@ -3,7 +3,7 @@
     display: inline-block;
 }
 
-.card_image {
+.image {
     width: var(--imageCardWidth);
     border-radius: var(--borderRadius);
     user-select: none;
@@ -11,13 +11,12 @@
     cursor: pointer;
 }
 
-.card_image:hover {
+.image:hover {
     filter: grayscale(0%);
 }
 
 .page_image {
     width: var(--imagePageWidth);
-    border-radius: var(--borderRadius);
 }
 
 .button {
@@ -32,6 +31,11 @@
     opacity: 0.5;
     padding: var(--spacingExtraSmall) var(--spacingBase);
     transition: transform 0.3s ease-in-out;
+}
+
+.page_button {
+    bottom: 87%;
+    right: 3%;
 }
 
 .button:hover {

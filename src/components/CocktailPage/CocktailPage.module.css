@@ -1,9 +1,10 @@
 .container {
     width: var(--containerWidth);
-    margin: var(--spacingMedium) auto;
+    margin: var(--spacingExtraMedium) auto;
     display: flex;
     align-items: center;
-    gap: var(--spacingLarge);
+    justify-content: center;
+    gap: var(--spacingExtraMedium);
     color: var(--textColor);
     font-size: var(--fontSizeBase);
     font-weight: var(--fontWeightLight);
@@ -13,10 +14,23 @@
     color: var(--titleCardListColor);
     font-size: var(--fontSizeLarge);
     font-weight: var(--fontWeightSemiBold);
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    font-style: italic;
 }
 
 .title_instructions {
     font-size: var(--fontSizeMedium);
-    font-style: italic;
     font-weight: var(--fontWeightRegular);
+    padding: 0;
+    margin: 0;
+    padding-top: var(--spacingMedium);
+}
+
+.ingredients {
+    padding-top: var(--spacingMedium);
+    font-style: italic;
 }

@@ -21,12 +21,16 @@ const Image: FC<ImageProps> = ({ imgSrc, alt, className }) => {
             <img
                 src={imageSrc}
                 alt={alt}
-                className={
-                    className === 'page' ? styles.page_image : styles.card_image
-                }
+                className={`${styles.image} ${
+                    className === 'page' ? styles.page_image : ''
+                }`}
                 onError={handleError}
             />
-            <button className={styles.button}>
+            <button
+                className={`${styles.button} ${
+                    className === 'page' ? styles.page_button : ''
+                }`}
+            >
                 <Icon path={mdiBookmarkOutline} size={1} />
             </button>
         </div>
