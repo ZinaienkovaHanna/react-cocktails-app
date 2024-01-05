@@ -8,7 +8,6 @@
     border-radius: var(--borderRadius);
     user-select: none;
     filter: grayscale(70%);
-    cursor: pointer;
 }
 
 .image:hover {

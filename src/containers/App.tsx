@@ -15,6 +15,7 @@ import {
     cocktailLoader,
     cocktailSearchLoader,
     ingredientSearchLoader,
+    cocktailBookmarkedLoader,
 } from '../routes/loader';
 
 const router = createBrowserRouter([
@@ -58,6 +59,7 @@ const router = createBrowserRouter([
             {
                 path: '/mylist',
                 element: <MyList />,
+                loader: cocktailBookmarkedLoader,
             },
         ],
     },

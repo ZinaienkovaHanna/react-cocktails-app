@@ -4,6 +4,7 @@
     background-color: var(--backgroundCardColor);
     border-radius: var(--borderRadius);
 }
+
 .title_container {
     height: var(--cardTitleHeight);
     display: flex;
@@ -12,10 +13,24 @@
     align-items: center;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .name {
     margin: 0;
     padding: 0 var(--spacingBase);
     text-align: center;
     color: var(--titleCardColor);
     font-size: var(--fontSizeBase);
+    transition: transform 0.3s ease;
+}
+
+.name:hover {
+    color: var(--titleCardListColor);
+    transform: scale(1.2);
+}
+
+.icon {
+    color: var(--iconColor);
 }

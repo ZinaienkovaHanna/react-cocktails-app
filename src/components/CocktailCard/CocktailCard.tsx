@@ -1,21 +1,23 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import Image from '../Image';
-import { IngredientType } from '../../types/cocktailsTypes';
 
 import styles from './CocktailCard.module.css';
 
 interface CocktailCardProps {
     imgSrc: string;
     name: string;
-    ingredients?: IngredientType[];
+    id: string;
 }
 
-const CocktailCard: FC<CocktailCardProps> = ({ imgSrc, name, ingredients }) => {
+const CocktailCard: FC<CocktailCardProps> = ({ imgSrc, name, id }) => {
     return (
         <div className={styles.container}>
-            <Image imgSrc={imgSrc} alt={name} className="card" />
+            <Image imgSrc={imgSrc} alt={name} className="card" id={id} />
             <div className={styles.title_container}>
-                <h4 className={styles.name}>{name}</h4>
+                <Link to={`/cocktails/${id}`} className={styles.link}>
+                    <h4 className={styles.name}>{name}</h4>
+                </Link>
             </div>
         </div>
     );

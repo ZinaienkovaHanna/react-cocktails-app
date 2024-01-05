@@ -1,6 +1,10 @@
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 import Icon from '@mdi/react';
-import { mdiBookmarkOutline } from '@mdi/js';
+import { mdiBookmarkOutline, mdiBookmark } from '@mdi/js';
+import {
+    getCocktailStatus,
+    updateCocktailStatus,
+} from '../../utils/localStorage';
 
 import styles from './Image.module.css';
 
@@ -8,10 +12,34 @@ interface ImageProps {
     imgSrc: string;
     alt: string;
     className: string;
+    id: string;
 }
 
-const Image: FC<ImageProps> = ({ imgSrc, alt, className }) => {
+export interface StatusType {
+    bookmarked: true | false;
+}
+
+const Image: FC<ImageProps> = ({ imgSrc, alt, className, id }) => {
     const [imageSrc, setImageSrc] = useState<string>(imgSrc);
+    const [status, setStatus] = useState<StatusType>({
+        bookmarked: false,
+    });
+
+    useEffect(() => {
+        const storedStatus = getCocktailStatus(id);
+
+        if (storedStatus) {
+            setStatus(storedStatus);
+        }
+    }, [id]);
+
+    const handleBookmarkClick = () => {
+        const newStatus: StatusType = {
+            bookmarked: status.bookmarked === true ? false : true,
+        };
+        setStatus(newStatus);
+        updateCocktailStatus(id, newStatus);
+    };
 
     const handleError = () =>
         setImageSrc('/static/images/placeholder_image.png');
@@ -30,8 +58,16 @@ const Image: FC<ImageProps> = ({ imgSrc, alt, className }) => {
                 className={`${styles.button} ${
                     className === 'page' ? styles.page_button : ''
                 }`}
+                onClick={handleBookmarkClick}
             >
-                <Icon path={mdiBookmarkOutline} size={1} />
+                <Icon
+                    path={
+                        status.bookmarked === true
+                            ? mdiBookmark
+                            : mdiBookmarkOutline
+                    }
+                    size={1}
+                />
             </button>
         </div>
     );

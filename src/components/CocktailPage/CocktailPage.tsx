@@ -16,6 +16,7 @@ const CocktailPage: FC<CocktailPageType> = ({ cocktail }) => {
                 imgSrc={cocktail[0].image}
                 alt={cocktail[0].name}
                 className="page"
+                id={cocktail[0].id}
             />
             <div className={styles.container_info}>
                 <h2 className={styles.name}>{cocktail[0].name}</h2>
