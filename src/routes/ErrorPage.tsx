@@ -10,7 +10,7 @@ export default function ErrorPage() {
     return (
         <div
             id="error-page"
-            style={{ width: '1200px', color: 'black', margin: 'auto' }}
+            style={{ width: '1200px', color: 'gray', margin: 'auto' }}
         >
             <h1 style={{ textAlign: 'center' }}>Oops!</h1>
             <p style={{ textAlign: 'center' }}>

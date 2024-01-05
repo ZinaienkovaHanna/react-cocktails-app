@@ -1,19 +1,19 @@
 import { FC } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-import style from './Menu.module.css';
+import styles from './Menu.module.css';
 
 const Menu: FC = () => {
     return (
-        <div className={style.background}>
+        <div className={styles.background}>
             <nav>
-                <ul className={style.wrapper}>
-                    <li className={style.list}>
-                        <Link to="/" className={style.logo}>
+                <ul className={styles.wrapper}>
+                    <li className={styles.list}>
+                        <Link to="/" className={styles.logo}>
                             <img
                                 src="/static/images/logo_cocktail.png"
                                 alt="logo"
-                                className={style.logo}
+                                className={styles.logo}
                             />
                         </Link>
                     </li>
@@ -21,7 +21,7 @@ const Menu: FC = () => {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                isActive ? style.active : style.nav_link
+                                isActive ? styles.active : styles.nav_link
                             }
                         >
                             Home
@@ -29,19 +29,20 @@ const Menu: FC = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/categories"
+                            to="/cocktails"
                             className={({ isActive }) =>
-                                isActive ? style.active : style.nav_link
+                                isActive ? styles.active : styles.nav_link
                             }
                         >
-                            Categories
+                            Cocktails
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink
                             to="/ingredients"
                             className={({ isActive }) =>
-                                isActive ? style.active : style.nav_link
+                                isActive ? styles.active : styles.nav_link
                             }
                         >
                             Ingredients
@@ -49,9 +50,19 @@ const Menu: FC = () => {
                     </li>
                     <li>
                         <NavLink
+                            to="/categories"
+                            className={({ isActive }) =>
+                                isActive ? styles.active : styles.nav_link
+                            }
+                        >
+                            Categories
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
                             to="/mylist"
                             className={({ isActive }) =>
-                                isActive ? style.active : style.nav_link
+                                isActive ? styles.active : styles.nav_link
                             }
                         >
                             My list

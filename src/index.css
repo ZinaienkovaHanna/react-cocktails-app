@@ -1,44 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Roboto:wght@300&display=swap');
 
 :root {
     /* ### Color */
-    --textColor: #272727;
-    --textMenuColor: #fff;
-    --backgroundColor: #cdcdcd;
-    --backgroundMenuColor: #272727;
-    --backgroundButtonColor: #edc3ca;
-    --backgroundModalColor: #48494a;
-    --iconColor: #fff;
-    --iconColorHover: #edc3ca;
-    --linkColorHover: #edc3ca;
+    --textColor: #c5cfce;
+    --textMenuColor: #c5cfce;
+    --textCardColor: #545b60;
+    --titleCardColor: #c5cfce;
+    --titleCardListColor: #edc3ca;
+    --subtitleCardListColor: #c5cfce;
+    --invalidColor: rgb(228, 101, 101);
+
+    --backgroundColor: #13191e;
+    --backgroundCardColor: #182026;
+    --backgroundInputColor: #182026;
+    --backgroundMenuColor: #000;
+    --backgroundButtonColor: #545b60;
+    --backgroundIconColor: #13191e;
+
+    --buttonColor: #13191e;
+    --borderInputColor: #edc3ca;
+    --activeBorderColor: #545b60;
+    --iconColor: #c5cfce;
+    --iconHoverColor: #edc3ca;
+    --linkHoverColor: #edc3ca;
+    --buttonHoverColor: #edc3ca;
+    --inputPlaceholderColor: #545b60;
 
     /* ### Spacing */
     --spacingBase: 8px;
-    --spacingSmall: 4px;
-    --spacingLarge: 16px;
-    --spacingExtraLarge: 40px;
+    --spacingExtraSmall: 4px;
+    --spacingSmall: 12px;
+    --spacingMedium: 40px;
+    --spacingExtraMedium: 100px;
+    --spacingLarge: 140px;
+    --spacingExtraLarge: 180px;
 
     /* ### Font-size */
     --fontSizeBase: 16px;
     --fontSizeSmall: 12px;
-    --fontSizeLarge: 24px;
-    --fontSizeExtraLarge: 36px;
+    --fontSizeMedium: 24px;
+    --fontSizeLarge: 40px;
+    --fontSizeExtraLarge: 80px;
 
     /* ### Font-weight */
+    --fontWeightLight: 300;
     --fontWeightRegular: 400;
     --fontWeightSemiBold: 600;
 
     /* ### Border-radius */
-    --borderRadius: 8px;
+    --borderRadius: 4px;
 
     /* ### Width */
     --containerWidth: 1200px;
     --menuWidth: 600px;
-    --cardWidth: 200px;
+    --cardWidth: 188px;
+    --imageCardWidth: 188px;
+    --imagePageWidth: 400px;
+    --inputWidth: 400px;
+    --buttonWidth: 100px;
 
     /* ### Height */
     --menuHeight: 60px;
-    --cardHeight: 160px;
+    --cardHeight: 264px;
+    --cardTitleHeight: 64px;
+    --logoHeight: 48px;
+    --inputHeight: 32px;
+    --buttonHeight: 32px;
 }
 
 body {

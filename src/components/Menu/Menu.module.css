@@ -1,6 +1,6 @@
 .background {
-    background-color: var(--backgroundMenuColor);
     height: var(--menuHeight);
+    background-color: var(--backgroundMenuColor);
 }
 
 .wrapper {
@@ -9,26 +9,27 @@
     margin: auto;
     display: flex;
     align-items: center;
-    gap: var(--spacingLarge);
+    gap: var(--spacingMedium);
     list-style-type: none;
 }
 
 .nav_link {
     color: var(--textMenuColor);
     font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightLight);
     text-decoration: none;
 }
 
 .nav_link:hover {
-    color: var(--linkColorHover);
+    color: var(--linkHoverColor);
 }
 
 .active {
-    color: var(--linkColorHover);
+    color: var(--linkHoverColor);
     font-size: var(--fontSizeBase);
     text-decoration: none;
 }
 
 .logo {
-    height: var(--menuHeight);
+    height: var(--logoHeight);
 }

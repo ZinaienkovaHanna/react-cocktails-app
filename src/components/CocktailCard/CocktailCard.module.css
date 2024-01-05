@@ -1,0 +1,21 @@
+.container {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    background-color: var(--backgroundCardColor);
+    border-radius: var(--borderRadius);
+}
+.title_container {
+    height: var(--cardTitleHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    margin: 0;
+    padding: 0 var(--spacingBase);
+    text-align: center;
+    color: var(--titleCardColor);
+    font-size: var(--fontSizeBase);
+}
