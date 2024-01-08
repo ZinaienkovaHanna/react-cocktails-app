@@ -6,6 +6,8 @@ export interface IngredientType {
 export interface CocktailType {
     id: string;
     name: string;
+    isFavorite: boolean;
+    isPopular: boolean;
     category: string | null;
     alcoholic: string | null;
     glass: string | null;

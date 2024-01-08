@@ -4,24 +4,6 @@ import {
     getCocktailByName,
     getCocktailsByIngredient,
 } from '../services/cocktailsAPI';
-import popularCocktailsData from '../data/popularCocktails.json';
-import { getBookmarkedKeys } from '../utils/localStorage';
-import { CocktailType } from '../types/cocktailsTypes';
-
-export const homeLoader = async () => {
-    try {
-        const popularCocktails: CocktailType[] = [];
-
-        for (const cocktail of popularCocktailsData) {
-            let popularCocktail = await getCocktailById(cocktail.id);
-            popularCocktails.push(popularCocktail[0]);
-        }
-
-        return { popularCocktails };
-    } catch (error) {
-        throw new Error('Error loading home data');
-    }
-};
 
 export const cocktailLoader = async ({
     params,
@@ -84,23 +66,3 @@ export const ingredientSearchLoader = async ({
         throw new Error('Error loading cocktails');
     }
 };
-
-export const cocktailBookmarkedLoader = async () => {
-    try {
-        const bookmarkedKeys = getBookmarkedKeys();
-
-        console.log(bookmarkedKeys);
-        const bookmarkedCocktails = [];
-
-        for (const key of bookmarkedKeys) {
-            let bookmarkedCocktail = await getCocktailById(key);
-            bookmarkedCocktails.push(bookmarkedCocktail[0]);
-        }
-
-        return { bookmarkedCocktails };
-    } catch (error) {
-        throw new Error('Error loading bookmarked cocktails');
-    }
-};
-
-console.log(cocktailBookmarkedLoader());

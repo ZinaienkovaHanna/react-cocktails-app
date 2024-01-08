@@ -3,6 +3,12 @@
     height: var(--cardHeight);
     background-color: var(--backgroundCardColor);
     border-radius: var(--borderRadius);
+    margin-top: 12px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.1);
 }
 
 .title_container {
@@ -13,22 +19,18 @@
     align-items: center;
 }
 
-.link {
-    text-decoration: none;
-}
-
 .name {
     margin: 0;
     padding: 0 var(--spacingBase);
     text-align: center;
     color: var(--titleCardColor);
     font-size: var(--fontSizeBase);
-    transition: transform 0.3s ease;
+    font-weight: var(--fontWeightRegular);
 }
 
 .name:hover {
     color: var(--titleCardListColor);
-    transform: scale(1.2);
+    font-weight: var(--fontWeightSemiBold);
 }
 
 .icon {

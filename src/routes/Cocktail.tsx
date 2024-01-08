@@ -6,7 +6,7 @@ import { CocktailType } from '../types/cocktailsTypes';
 const Cocktail: FC = () => {
     const { cocktail } = useLoaderData() as { cocktail: CocktailType[] };
 
-    return <CocktailPage cocktail={cocktail} />;
+    return <CocktailPage cocktail={cocktail[0]} />;
 };
 
 export default Cocktail;

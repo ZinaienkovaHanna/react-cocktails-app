@@ -11,6 +11,8 @@ const serializeCocktail = (cocktail: CocktailAPIType): CocktailType => {
     return {
         id: cocktail.idDrink,
         name: cocktail.strDrink,
+        isFavorite: false,
+        isPopular: false,
         category: cocktail.strCategory,
         alcoholic: cocktail.strAlcoholic,
         glass: cocktail.strGlass,

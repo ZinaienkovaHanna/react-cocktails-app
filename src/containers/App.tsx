@@ -11,11 +11,9 @@ import CocktailSearch from '../routes/CocktailSearch';
 import Ingredients from '../routes/Ingredients';
 import IngredientSearch from '../routes/IngredientSearch';
 import {
-    homeLoader,
     cocktailLoader,
     cocktailSearchLoader,
     ingredientSearchLoader,
-    cocktailBookmarkedLoader,
 } from '../routes/loader';
 
 const router = createBrowserRouter([
@@ -27,7 +25,6 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
-                loader: homeLoader,
             },
             {
                 path: '/categories',
@@ -59,7 +56,6 @@ const router = createBrowserRouter([
             {
                 path: '/mylist',
                 element: <MyList />,
-                loader: cocktailBookmarkedLoader,
             },
         ],
     },
