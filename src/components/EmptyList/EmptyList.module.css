@@ -1,0 +1,12 @@
+.container {
+    width: var(--containerWidth);
+    margin: var(--spacingExtraMedium) auto;
+}
+
+.title {
+    text-align: center;
+    color: var(--textCardColor);
+    font-size: var(--fontSizeMedium);
+    font-style: italic;
+    font-weight: var(--fontWeightRegular);
+}
