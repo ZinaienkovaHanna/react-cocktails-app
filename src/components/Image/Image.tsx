@@ -12,10 +12,6 @@ interface ImageProps {
     onClick?: () => void;
 }
 
-export interface StatusType {
-    bookmarked: true | false;
-}
-
 const Image: FC<ImageProps> = ({ imgSrc, alt, type, isInMyList, onClick }) => {
     const [imageSrc, setImageSrc] = useState<string>(imgSrc);
 

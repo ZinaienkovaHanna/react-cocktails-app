@@ -74,4 +74,5 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: var(--backgroundColor);
+    height: 100%;
 }

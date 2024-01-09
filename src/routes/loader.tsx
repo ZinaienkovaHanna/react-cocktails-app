@@ -3,6 +3,7 @@ import {
     getCocktailById,
     getCocktailByName,
     getCocktailsByIngredient,
+    getCocktailsByCategory,
 } from '../services/cocktailsAPI';
 
 export const cocktailLoader = async ({
@@ -62,6 +63,26 @@ export const ingredientSearchLoader = async ({
         );
 
         return { cocktailsByIngredient, searchByIngredientValue };
+    } catch (error) {
+        throw new Error('Error loading cocktails');
+    }
+};
+
+export const categoryLoader = async ({
+    params,
+}: {
+    params: Params<'categoryValue'>;
+}) => {
+    try {
+        const categoryValue = params.categoryValue;
+
+        if (!categoryValue) {
+            throw new Error('Category value is undefined');
+        }
+
+        const cocktailsByCategory = await getCocktailsByCategory(categoryValue);
+
+        return { cocktailsByCategory, categoryValue };
     } catch (error) {
         throw new Error('Error loading cocktails');
     }

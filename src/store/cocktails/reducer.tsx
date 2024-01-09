@@ -1,4 +1,4 @@
-import { CocktailAction, CocktailActionTypes } from './actionTypes';
+import { CocktailActionTypes } from './actionTypes';
 import { CocktailType } from '../../types/cocktailsTypes';
 
 interface CocktailsStateType {
