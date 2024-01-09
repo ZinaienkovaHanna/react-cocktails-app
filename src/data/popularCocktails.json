@@ -1,99 +1,686 @@
 [
     {
         "name": "Negroni",
-        "id": "11003"
+        "id": "11003",
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Old-fashioned glass",
+        "image": "/static/images/cocktail_11003.png",
+        "instructions": "Stir into glass over ice, garnish and serve.",
+        "isFavorite": false,
+        "isPopular": true,
+        "ingredients": [
+            { "name": "Gin", "measure": "1 oz " },
+            { "name": "Campari", "measure": "1 oz " },
+            { "name": "Sweet Vermouth", "measure": "1 oz " }
+        ]
     },
     {
-        "name": "Old Fashioned",
-        "id": "11001"
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Cocktail glass",
+        "id": "11007",
+        "image": "/static/images/cocktail_11007.png",
+        "ingredients": [
+            { "name": "Tequila", "measure": "1 1/2 oz" },
+            { "name": "Triple sec", "measure": "1/2 oz" },
+            { "name": "Lime juice", "measure": "1 oz" },
+            { "name": "Salt", "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Margarita"
     },
     {
-        "name": "Margarita",
-        "id": "11007"
-    },
-    {
-        "name": "Daiquiri",
-        "id": "11006"
-    },
-    {
-        "name": "Whiskey Sour",
-        "id": "11004"
-    },
-    {
-        "name": "Manhattan",
-        "id": "11008"
-    },
-    {
-        "name": "Aperol Spritz",
-        "id": "178325"
-    },
-    {
-        "name": "Penicillin",
-        "id": "17829"
-    },
-    {
-        "name": "Bloody Mary",
-        "id": "11113"
-    },
-    {
-        "name": "French 75",
-        "id": "17197"
-    },
-    {
-        "name": "Mojito",
-        "id": "11000"
-    },
-    {
-        "name": "Last Word",
-        "id": "17247"
-    },
-    {
-        "name": "Mai Tai",
-        "id": "11690"
-    },
-    {
-        "name": "Gimlet",
-        "id": "17255"
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Old-fashioned glass",
+        "id": "11001",
+        "image": "/static/images/cocktail_11001.png",
+        "ingredients": [
+            { "name": "Bourbon", "measure": "4.5 cL" },
+            { "name": "Angostura bitters", "measure": "2 dashes" },
+            { "name": "Sugar", "measure": "1 cube" },
+            { "name": "Water", "measure": "dash" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Old Fashioned"
     },
 
     {
-        "name": "Gin Fizz",
-        "id": "11410"
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Cocktail glass",
+        "id": "11006",
+        "image": "/static/images/cocktail_11006.png",
+        "ingredients": [
+            { "name": "Light rum", "measure": "1 1/2 oz " },
+            { "name": "Lime", "measure": "Juice of 1/2 " },
+            { "name": "Powdered sugar", "measure": "1 tsp " },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Daiquiri"
     },
     {
-        "name": "Sazerac",
-        "id": "12127"
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Old-fashioned glass",
+        "id": "11004",
+        "image": "/static/images/cocktail_11004.png",
+        "ingredients": [
+            { "name": "Blended whiskey", "measure": "2 oz " },
+            { "name": "Lemon", "measure": "Juice of 1/2 " },
+            { "name": "Powdered sugar", "measure": "1/2 tsp " },
+            { "name": "Cherry", "measure": "1 " },
+            { "name": "Lemon", "measure": "1/2 slice " },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Whiskey Sour"
     },
     {
-        "name": "Piña Colada",
-        "id": "17207"
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Cocktail glass",
+        "id": "11008",
+        "image": "/static/images/cocktail_11008.png",
+        "ingredients": [
+            { "name": "Sweet Vermouth", "measure": "3/4 oz " },
+            { "name": "Bourbon", "measure": "2 1/2 oz Blended " },
+            { "name": "Angostura bitters", "measure": "dash " },
+            { "name": "Ice", "measure": "2 or 3 " },
+            { "name": "Maraschino cherry", "measure": "1 " },
+            { "name": "Orange peel", "measure": "1 twist of " },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Stirred over ice, strained into a chilled glass, garnished, and served up.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Manhattan"
     },
     {
-        "name": "Zombie",
-        "id": "17241"
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Wine Glass",
+        "id": "178325",
+        "image": "/static/images/cocktail_178325.png",
+        "ingredients": [
+            { "name": "Aperol", "measure": "100 ml" },
+            { "name": "Prosecco", "measure": "150 ml" },
+            { "name": "Soda Water", "measure": "Top" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Put a couple of cubes of ice into 2 glasses and add a 50 ml measure of Aperol to each. Divide the prosecco between the glasses and then top up with soda, if you like.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Aperol Spritz"
     },
     {
-        "name": "Gin Basil Smash",
-        "id": "178314"
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Old-fashioned glass",
+        "id": "17829",
+        "image": "/static/images/cocktail_17829.png",
+        "ingredients": [
+            { "name": "Blended Scotch", "measure": "2 oz" },
+            { "name": "Lemon Juice", "measure": "3/4 oz" },
+            { "name": "Honey syrup", "measure": "2 tsp" },
+            { "name": "Ginger Syrup", "measure": "2 tsp" },
+            { "name": "Islay single malt Scotch", "measure": "1/4 oz" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake blended Scotch, lemon juice, honey syrup and ginger syrup with ice. Strain over large ice in chilled rocks glass. Float smoky Scotch on top (be sure to use a smoky Scotch such as an Islay single malt). Garnish with candied ginger.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Penicillin"
     },
     {
-        "name": "Cosmopolitan",
-        "id": "17196"
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Old-fashioned glass",
+        "id": "11113",
+        "image": "/static/images/cocktail_11113.png",
+        "ingredients": [
+            { "name": "Vodka", "measure": "1 1/2 oz" },
+            { "name": "Tomato juice", "measure": "3 oz" },
+            { "name": "Lemon juice", "measure": "1 dash" },
+            { "name": "Worcestershire sauce", "measure": "1/2 tsp" },
+            { "name": "Tabasco sauce", "measure": "2-3 drops" },
+            { "name": "Lime", "measure": "1 wedge" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Stirring gently, pour all ingredients into highball glass. Garnish.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Bloody Mary"
     },
     {
-        "name": "Bramble",
-        "id": "17210"
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Collins glass",
+        "id": "17197",
+        "image": "/static/images/cocktail_17197.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "1 1/2 oz" },
+            { "name": "Sugar", "measure": "2 tsp superfine" },
+            { "name": "Lemon juice", "measure": "1 1/2 oz" },
+            { "name": "Champagne", "measure": "4 oz Chilled" },
+            { "name": "Orange", "measure": "1" },
+            { "name": "Maraschino cherry", "measure": "1" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "French 75"
     },
     {
-        "name": "Sidecar",
-        "id": "12196"
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Highball glass",
+        "id": "11000",
+        "image": "/static/images/cocktail_11000.png",
+        "ingredients": [
+            { "name": "Light rum", "measure": "2-3 oz" },
+            { "name": "Lime", "measure": "Juice of 1" },
+            { "name": "Sugar", "measure": "2 tsp" },
+            { "name": "Mint", "measure": "2-4" },
+            { "name": "Soda water", "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Mojito"
     },
     {
-        "name": "Aviation",
-        "id": "17180"
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Cocktail glass",
+        "id": "17247",
+        "image": "/static/images/cocktail_17247.png",
+        "ingredients": [
+            { "name": "Green Chartreuse", "measure": "1 oz" },
+            { "name": "Maraschino Liqueur", "measure": "1 oz" },
+            { "name": "Lime Juice", "measure": "1 oz" },
+            { "name": "Gin", "measure": "1 oz" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake with ice and strain into a cocktail glass.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "The Last Word"
     },
     {
-        "name": "Paloma",
-        "id": "17253"
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Collins glass",
+        "id": "11690",
+        "image": "/static/images/cocktail_11690.png",
+        "ingredients": [
+            { "name": "Light rum", "measure": "1 oz" },
+            { "name": "Orgeat syrup", "measure": "1/2 oz" },
+            { "name": "Triple sec", "measure": "1/2 oz" },
+            { "name": "Sweet and sour", "measure": "1 1/2 oz" },
+            { "name": "Cherry", "measure": "1" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Mai Tai"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Martini Glass",
+        "id": "17255",
+        "image": "/static/images/cocktail_17255.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "2 1/2 oz" },
+            { "name": "Lime Juice", "measure": "1/2 oz" },
+            { "name": "Sugar Syrup", "measure": "1/2 oz" },
+            { "name": "Lime", "measure": "1" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Add all the ingredients to a shaker and fill with ice.\r\n\r\nShake, and strain into a chilled cocktail glass or an Old Fashioned glass filled with fresh ice.\r\n\r\nGarnish with a lime wheel.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Gimlet"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Highball glass",
+        "id": "11410",
+        "image": "/static/images/cocktail_11410.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "2 oz" },
+            { "name": "Lemon", "measure": "Juice of 1/2" },
+            { "name": "Powdered sugar", "measure": "1 tsp" },
+            { "name": "Carbonated water", "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Gin Fizz"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Old-fashioned glass",
+        "id": "12127",
+        "image": "/static/images/cocktail_12127.png",
+        "ingredients": [
+            { "name": "Ricard", "measure": "1 tsp" },
+            { "name": "Sugar", "measure": "1/2 tsp superfine" },
+            { "name": "Peychaud bitters", "measure": "2 dashes" },
+            { "name": "Water", "measure": "1 tsp" },
+            { "name": "Bourbon", "measure": "2 oz" },
+            { "name": "Lemon peel", "measure": "1 twist of" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Sazerac"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Collins glass",
+        "id": "17207",
+        "image": "/static/images/cocktail_17207.png",
+        "ingredients": [
+            { "name": "Light rum", "measure": "3 oz" },
+            { "name": "Coconut milk", "measure": "3 tblsp" },
+            { "name": "Pineapple", "measure": "3 tblsp" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Mix with crushed ice in blender until smooth. Pour into chilled glass, garnish and serve.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Pina Colada"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Hurricane glass",
+        "id": "17241",
+        "image": "/static/images/cocktail_17241.png",
+        "ingredients": [
+            { "name": "Rum", "measure": "1 1/2 oz" },
+            { "name": "Gold rum", "measure": "1 1/2 oz" },
+            { "name": "151 proof rum", "measure": "1 oz" },
+            { "name": "Pernod", "measure": "1 tsp" },
+            { "name": "Grenadine", "measure": "1 tsp" },
+            { "name": "Lime Juice", "measure": "1 tsp" },
+            { "name": "Angostura Bitters", "measure": "1 drop" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Blend at high speed for no more than 5 seconds. Pour into a glass, add ice cubes to fill, then add the garnish. *Donn’s mix: Bring 3 crushed cinnamon sticks, 1 cup of sugar and 1 cup of water to a boil, stirring until the sugar is dissolved. Simmer for 2 minutes, then remove from the heat and let sit for at least 2 hours before straining into a clean glass bottle. Then add 1 part of the syrup and 2 parts of fresh grapefruit juice together.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Zombie"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Highball glass",
+        "id": "178314",
+        "image": "/static/images/cocktail_178314.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "6 cl" },
+            { "name": "Lemon Juice", "measure": "2 cl" },
+            { "name": "Sugar Syrup", "measure": "2 cl" },
+            { "name": "Basil", "measure": "Whole" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": "" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Muddle Basil leaves (~ 10) with Suggar Syrup in a shaker. Add Gin an Lemon Juice. Filter and serve in a tumbler with ice",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Gin Basil Smash"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Cocktail glass",
+        "id": "17196",
+        "image": "/static/images/cocktail_17196.png",
+        "ingredients": [
+            { "name": "Vodka", "measure": "1 1/4 oz" },
+            { "name": "Lime juice", "measure": "1/4 oz" },
+            { "name": "Cointreau", "measure": "1/4 oz" },
+            { "name": "Cranberry juice", "measure": "1/4 cup" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Cosmopolitan"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Old-Fashioned glass",
+        "id": "17210",
+        "image": "/static/images/cocktail_17210.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "4 cl" },
+            { "name": "lemon juice", "measure": "1.5 cl" },
+            { "name": "Sugar syrup", "measure": "1 cl" },
+            { "name": "Creme de Mure", "measure": "1.5 cl" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Bramble"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Cocktail glass",
+        "id": "12196",
+        "image": "/static/images/cocktail_12196.png",
+        "ingredients": [
+            { "name": "Cognac", "measure": "2 oz" },
+            { "name": "Cointreau", "measure": "1/2 oz" },
+            { "name": "Lemon juice", "measure": "1 oz" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Sidecar"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Cocktail glass",
+        "id": "17180",
+        "image": "/static/images/cocktail_17180.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "4.5 cl" },
+            { "name": "Lemon juice", "measure": "1.5 cl" },
+            { "name": "Maraschino liqueur", "measure": "1.5 cl" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Aviation"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Collins glass",
+        "id": "17253",
+        "image": "/static/images/cocktail_17253.png",
+        "ingredients": [
+            { "name": "Grape Soda", "measure": "3 oz" },
+            { "name": "Tequila", "measure": "1 1/2 oz" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Stir together and serve over ice.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Paloma"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Cocktail glass",
+        "id": "17186",
+        "image": "/static/images/cocktail_17186.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "1 1/2 oz" },
+            { "name": "Grenadine", "measure": "2 tsp" },
+            { "name": "Lemon", "measure": "Juice of 1/2" },
+            { "name": "Egg white", "measure": "1" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Dry shake ingredients to emulsify, add ice, shake and served straight up.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Clover Club"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Cocktail glass",
+        "id": "178371",
+        "image": "/static/images/cocktail_178371.png",
+        "ingredients": [
+            { "name": "White Rum", "measure": "2 oz" },
+            { "name": "Sugar Syrup", "measure": "1 oz" },
+            { "name": "Lime Juice", "measure": "1 oz" },
+            { "name": "Angostura Bitters", "measure": "2 dashes" },
+            { "name": "Prosecco", "measure": "2 oz" },
+            { "name": "", "measure": "" },
+            { "name": "", "measure": "" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake a handful of mint, 2oz white rum, 1oz of sugar syrup, 1oz lime juice and 2 dashes angostura bitters with ice. Double strain into a glass and top with 2oz of prosecco.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Old Cuban"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Collins glass",
+        "id": "15941",
+        "image": "/static/images/cocktail_15941.png",
+        "ingredients": [
+            { "name": "Campari", "measure": "1 oz" },
+            { "name": "Sweet Vermouth", "measure": "1 oz red" },
+            { "name": "Lemon peel", "measure": "Twist of" },
+            { "name": "Orange peel", "measure": "Twist of" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Americano"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Martini Glass",
+        "id": "17251",
+        "image": "/static/images/cocktail_17251.png",
+        "ingredients": [
+            { "name": "Campari", "measure": "1 oz" },
+            { "name": "Sweet Vermouth", "measure": "1 oz" },
+            { "name": "Rye whiskey", "measure": "1 1/4 oz" },
+            { "name": "Orange Peel", "measure": "1" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Stir with ice, strain, garnish and serve.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Boulevardier"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Cocktail",
+        "glass": "Cocktail glass",
+        "id": "17218",
+        "image": "/static/images/cocktail_17218.png",
+        "ingredients": [
+            { "name": "Gin", "measure": "6 cl" },
+            { "name": "Vodka", "measure": "1.5 cl" },
+            { "name": "Lillet Blanc", "measure": "0.75 cl" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Vesper"
+    },
+    {
+        "alcoholic": "Alcoholic",
+        "category": "Ordinary Drink",
+        "glass": "Old-fashioned glass",
+        "id": "11202",
+        "image": "/static/images/cocktail_11202.png",
+        "ingredients": [
+            { "name": "Sugar", "measure": "2 tsp" },
+            { "name": "Lime", "measure": "1" },
+            { "name": "Cachaca", "measure": "2 1/2 oz" },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null },
+            { "name": null, "measure": null }
+        ],
+        "instructions": "Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.",
+        "isFavorite": false,
+        "isPopular": true,
+        "name": "Caipirinha"
     }
 ]

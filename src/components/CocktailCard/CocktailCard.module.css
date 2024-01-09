@@ -3,7 +3,14 @@
     height: var(--cardHeight);
     background-color: var(--backgroundCardColor);
     border-radius: var(--borderRadius);
+    margin-top: 12px;
+    transition: transform 0.3s ease;
 }
+
+.container:hover {
+    transform: scale(1.1);
+}
+
 .title_container {
     height: var(--cardTitleHeight);
     display: flex;
@@ -18,4 +25,14 @@
     text-align: center;
     color: var(--titleCardColor);
     font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightRegular);
+}
+
+.name:hover {
+    color: var(--titleCardListColor);
+    font-weight: var(--fontWeightSemiBold);
+}
+
+.icon {
+    color: var(--iconColor);
 }

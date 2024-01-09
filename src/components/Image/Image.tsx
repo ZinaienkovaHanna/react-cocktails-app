@@ -1,16 +1,18 @@
 import { FC, useState } from 'react';
-import Icon from '@mdi/react';
-import { mdiBookmarkOutline } from '@mdi/js';
+import { mdiBookmark, mdiBookmarkOutline } from '@mdi/js';
+import IconButton from '../IconButton';
 
 import styles from './Image.module.css';
 
 interface ImageProps {
     imgSrc: string;
     alt: string;
-    className: string;
+    type: string;
+    isInMyList?: boolean;
+    onClick?: () => void;
 }
 
-const Image: FC<ImageProps> = ({ imgSrc, alt, className }) => {
+const Image: FC<ImageProps> = ({ imgSrc, alt, type, isInMyList, onClick }) => {
     const [imageSrc, setImageSrc] = useState<string>(imgSrc);
 
     const handleError = () =>
@@ -22,17 +24,23 @@ const Image: FC<ImageProps> = ({ imgSrc, alt, className }) => {
                 src={imageSrc}
                 alt={alt}
                 className={`${styles.image} ${
-                    className === 'page' ? styles.page_image : ''
+                    type === 'page' ? styles.page_image : ''
                 }`}
                 onError={handleError}
             />
-            <button
-                className={`${styles.button} ${
-                    className === 'page' ? styles.page_button : ''
-                }`}
-            >
-                <Icon path={mdiBookmarkOutline} size={1} />
-            </button>
+            {type === 'page' ? (
+                <IconButton
+                    path={isInMyList ? mdiBookmark : mdiBookmarkOutline}
+                    onClick={onClick || (() => {})}
+                    title={
+                        isInMyList ? 'delete from my list' : 'add to my list'
+                    }
+                    size={1}
+                    type="image"
+                />
+            ) : (
+                ''
+            )}
         </div>
     );
 };

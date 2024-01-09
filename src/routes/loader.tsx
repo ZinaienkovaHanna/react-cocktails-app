@@ -3,24 +3,8 @@ import {
     getCocktailById,
     getCocktailByName,
     getCocktailsByIngredient,
+    getCocktailsByCategory,
 } from '../services/cocktailsAPI';
-import popularCocktailsData from '../data/popularCocktails.json';
-import { CocktailType } from '../types/cocktailsTypes';
-
-export const homeLoader = async () => {
-    try {
-        const popularCocktails: CocktailType[] = [];
-
-        for (const cocktail of popularCocktailsData) {
-            let popularCocktail = await getCocktailById(cocktail.id);
-            popularCocktails.push(popularCocktail[0]);
-        }
-
-        return { popularCocktails };
-    } catch (error) {
-        throw new Error('Error loading home data');
-    }
-};
 
 export const cocktailLoader = async ({
     params,
@@ -84,9 +68,22 @@ export const ingredientSearchLoader = async ({
     }
 };
 
-// const test = async () => {
-//     const cocktailsByIngredient = await getCocktailsByIngredient('gin');
-//     console.log(cocktailsByIngredient);
-// };
+export const categoryLoader = async ({
+    params,
+}: {
+    params: Params<'categoryValue'>;
+}) => {
+    try {
+        const categoryValue = params.categoryValue;
 
-// console.log(test());
+        if (!categoryValue) {
+            throw new Error('Category value is undefined');
+        }
+
+        const cocktailsByCategory = await getCocktailsByCategory(categoryValue);
+
+        return { cocktailsByCategory, categoryValue };
+    } catch (error) {
+        throw new Error('Error loading cocktails');
+    }
+};

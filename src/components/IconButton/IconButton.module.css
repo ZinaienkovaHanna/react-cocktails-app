@@ -1,0 +1,27 @@
+.button {
+    border: none;
+    background-color: var(--backgroundIconColor);
+    color: var(--iconColor);
+    margin-top: var(--spacingExtraSmall);
+    padding: var(--spacingExtraSmall) var(--spacingBase);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.button:hover {
+    color: var(--iconHoverColor);
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.image_button {
+    position: absolute;
+    top: var(--spacingSmall);
+    right: var(--spacingSmall);
+    border-radius: 50%;
+    padding-top: var(--spacingBase);
+    padding-bottom: var(--spacingExtraSmall);
+    padding-left: var(--spacingBase);
+    padding-right: var(--spacingBase);
+}

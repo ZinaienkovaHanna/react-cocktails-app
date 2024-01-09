@@ -10,10 +10,6 @@
     gap: var(--spacingSmall);
 }
 
-.link {
-    text-decoration: none;
-}
-
 .title {
     margin: 0;
     padding: 0;
@@ -22,7 +18,11 @@
     padding-bottom: var(--spacingMedium);
     padding-top: var(--spacingMedium);
     color: var(--titleCardListColor);
-    font-size: var(--fontSizeLarge);
+    font-size: var(--fontSizeMedium);
     font-style: italic;
     font-weight: var(--fontWeightRegular);
+}
+
+.link {
+    text-decoration: none;
 }

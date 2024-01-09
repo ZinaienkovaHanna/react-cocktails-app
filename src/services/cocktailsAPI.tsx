@@ -11,6 +11,8 @@ const serializeCocktail = (cocktail: CocktailAPIType): CocktailType => {
     return {
         id: cocktail.idDrink,
         name: cocktail.strDrink,
+        isFavorite: false,
+        isPopular: false,
         category: cocktail.strCategory,
         alcoholic: cocktail.strAlcoholic,
         glass: cocktail.strGlass,
@@ -111,5 +113,14 @@ export const getCocktailsByIngredient = async (ingredientName: string) => {
         return cocktails.map(serializeCocktailByIngredient);
     } catch (error) {
         throw new Error('Error getting cocktails by ingredient');
+    }
+};
+
+export const getCocktailsByCategory = async (categoryName: string) => {
+    try {
+        const cocktails = await getData(`/filter.php?c=${categoryName}`);
+        return cocktails.map(serializeCocktailByIngredient);
+    } catch (error) {
+        throw new Error('Error getting cocktails by category');
     }
 };

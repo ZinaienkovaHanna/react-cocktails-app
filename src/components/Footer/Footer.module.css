@@ -1,0 +1,18 @@
+.footer {
+    height: var(--menuHeight);
+    background-color: var(--backgroundMenuColor);
+}
+
+.container {
+    width: var(--containerWidth);
+    height: var(--menuHeight);
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    color: var(--textMenuColor);
+    font-size: var(--fontSizeSmall);
+    font-weight: var(--fontWeightLight);
+}
