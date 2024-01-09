@@ -1,9 +1,9 @@
 .container {
     width: var(--cardWidth);
     height: var(--cardHeight);
+    margin-top: var(--spacingSmall);
     background-color: var(--backgroundCardColor);
     border-radius: var(--borderRadius);
-    margin-top: 12px;
     transition: transform 0.3s ease;
 }
 

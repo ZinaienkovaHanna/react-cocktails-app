@@ -1,9 +1,9 @@
 .name {
+    padding: 0;
+    margin: 0;
     color: var(--titleCardListColor);
     font-size: var(--fontSizeLarge);
     font-weight: var(--fontWeightSemiBold);
-    padding: 0;
-    margin: 0;
 }
 
 .info {
@@ -11,10 +11,10 @@
 }
 
 .title_instructions {
-    font-size: var(--fontSizeMedium);
-    font-weight: var(--fontWeightRegular);
     padding: 0;
     margin: 0;
+    font-size: var(--fontSizeMedium);
+    font-weight: var(--fontWeightRegular);
     padding-top: var(--spacingMedium);
 }
 
